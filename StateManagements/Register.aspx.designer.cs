@@ -15,13 +15,13 @@ namespace StateManagements
     {
 
         /// <summary>
-        /// form1 control.
+        /// RegisterForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm RegisterForm;
 
         /// <summary>
         /// lblFirstname control.
@@ -69,22 +69,22 @@ namespace StateManagements
         protected global::System.Web.UI.WebControls.Label lblGender;
 
         /// <summary>
-        /// rdoMale control.
+        /// rdbMale control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rdoMale;
+        protected global::System.Web.UI.WebControls.RadioButton rdbMale;
 
         /// <summary>
-        /// rdoFemale control.
+        /// rdbFemale control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rdoFemale;
+        protected global::System.Web.UI.WebControls.RadioButton rdbFemale;
 
         /// <summary>
         /// lblAge control.
@@ -123,6 +123,42 @@ namespace StateManagements
         protected global::System.Web.UI.WebControls.TextBox txtemail;
 
         /// <summary>
+        /// lblPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPassword;
+
+        /// <summary>
+        /// txtPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPassword;
+
+        /// <summary>
+        /// lblCP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCP;
+
+        /// <summary>
+        /// txtCP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCP;
+
+        /// <summary>
         /// submit control.
         /// </summary>
         /// <remarks>
@@ -130,14 +166,5 @@ namespace StateManagements
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button submit;
-
-        /// <summary>
-        /// hypLogin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hypLogin;
     }
 }
