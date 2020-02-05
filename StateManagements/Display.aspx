@@ -29,6 +29,12 @@
                 </td>
             </tr>
             <tr>
+                <td>Gender</td>
+                <td>:<asp:Label ID="lblGender    " runat="server">
+                </asp:Label>
+                </td>
+            </tr>
+            <tr>
                 <td>Email</td>
                 <td>:<asp:Label ID="lblEmail" runat="server">
                 </asp:Label>

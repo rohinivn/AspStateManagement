@@ -18,6 +18,7 @@ namespace StateManagements
                 lblLastName.Text = cookies["LastName"];
                 lblEmail.Text = cookies["Email"];
                 lblAge.Text = cookies["Age"];
+                lblGender.Text = cookies["Gender"];
             }
         }
     }
