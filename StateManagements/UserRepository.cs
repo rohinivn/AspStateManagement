@@ -38,7 +38,7 @@ namespace StateManagements
                 }
             }
         }
-        internal int ValidateLoginCredentials(string name,string email,string password)
+        internal bool ValidateLoginCredentials(string name,string email,string password)
         {
             using (SqlConnection sqlConnection = new SqlConnection(GetConnectionString()))
             {
@@ -49,9 +49,12 @@ namespace StateManagements
                     sqlCommand.Parameters.AddWithValue("@Password", password);
                     sqlCommand.Parameters.AddWithValue("@Email", email);
                     sqlConnection.Open();
-                    int result = (Int32)sqlCommand.ExecuteScalar();
-                    sqlConnection.Close();
-                    return result;
+                    SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+
+                    if (sqlDataReader.HasRows)
+                        return true;
+                    else
+                        return false;
                 }
             }
         }

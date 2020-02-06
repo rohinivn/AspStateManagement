@@ -10,7 +10,7 @@
     <form id="RegisterForm" runat="server">
 
         <h1>Register</h1>
-        <table style="width: 100%;" >
+        <table align="center" style="width: 100%;" >
             <tr>
                 <td>
                     <asp:Label ID="lblFirstname" runat="server" Text="FirstName"></asp:Label></td>
@@ -126,7 +126,7 @@
             </tr>
         </table>
         <p>
-         Already have an account??<asp:HyperLink ID="hypLogin" runat="server" NavigateUrl="~/Login.aspx">Login</asp:HyperLink>
+         Already have an account??<asp:HyperLink ID="hypLogin" runat="server" NavigateUrl="~/LoginPage.aspx">Login</asp:HyperLink>
            
         </p>
     </form>

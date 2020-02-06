@@ -1,15 +1,15 @@
-﻿ <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="StateManagements.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoginPage.aspx.cs" Inherits="StateManagements.LoginPage" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>LoginForm</title>
+    <title>LoginPage</title>
 </head>
 <body>
     <form id="LoginForm" runat="server">
         <h1>Login</h1>
-        <table style="width: 100%;">
+        <table align="center" style="width: 100%;">
             <tr>
                 <td>
                     <asp:Label ID="lblName" runat="server" Text="Name"></asp:Label></td>
