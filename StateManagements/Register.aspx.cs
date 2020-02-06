@@ -1,6 +1,4 @@
-﻿using System;
-using System.Configuration;
-namespace StateManagements
+﻿namespace StateManagements
 {
     public partial class SignUp : System.Web.UI.Page
     {
