@@ -1,6 +1,9 @@
-﻿namespace StateManagements
+﻿using System;
+using System.Web.UI;
+using System.Web;
+namespace StateManagements
 {
-    public partial class SignUp : System.Web.UI.Page
+    public partial class SignUp : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

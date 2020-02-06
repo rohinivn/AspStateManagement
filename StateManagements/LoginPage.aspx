@@ -5,11 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>LoginPage</title>
+    <link href="Style.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
     <form id="LoginForm" runat="server">
-        <h1>Login</h1>
-        <table align="center" style="width: 100%;">
+       <marquee><h1>Login</h1> </marquee>
+        <table align="center">
             <tr>
                 <td>
                     <asp:Label ID="lblName" runat="server" Text="Name"></asp:Label></td>
@@ -18,7 +19,7 @@
                     <asp:RequiredFieldValidator ID="RequiredFieldValidatorName" runat="server" ForeColor="Red" ErrorMessage="Name is required" ControlToValidate="txtName"></asp:RequiredFieldValidator>
                 </td>
             </tr>
-             <tr>
+            <tr>
                 <td>
                     <asp:Label ID="lblemail" runat="server" Text="Email"></asp:Label></td>
                 <td>
@@ -35,14 +36,19 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2">
-                    <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="LoginButtonClick"/></td>
+                <td>
+                    <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="LoginButtonClick" /></td>
+                <td>
+                    <input id="Reset" type="reset" value="reset" />
+                </td>
+            </tr>
+            <tr>
+                <td><br/>Don't have an account??<asp:HyperLink ID="hypSignUp" runat="server" NavigateUrl="~/Register.aspx">SignUp</asp:HyperLink>
+
+                </td>
             </tr>
         </table>
-        <p>
-         Don't have an account??<asp:HyperLink ID="hypSignUp" runat="server" NavigateUrl="~/Register.aspx">SignUp</asp:HyperLink>
-           
-        </p>
+
     </form>
 </body>
 </html>

@@ -5,12 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>SignUpForm</title>
+    <link href="Style.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
     <form id="RegisterForm" runat="server">
-
-        <h1>Register</h1>
-        <table align="center" style="width: 100%;" >
+        <marquee><h1>Register</h1></marquee>
+        <table align="center">
             <tr>
                 <td>
                     <asp:Label ID="lblFirstname" runat="server" Text="FirstName"></asp:Label></td>
@@ -40,7 +40,7 @@
                     <asp:Label ID="lblAge" runat="server" Text="Age"></asp:Label></td>
                 <td>
                     <asp:TextBox ID="txtAge" runat="server"></asp:TextBox>
-                    <asp:RangeValidator ID="RangeValidatorAge" runat="server"  ForeColor="Red" ErrorMessage="Age sholud be in 3-65" ControlToValidate="txtAge" MinimumValue="3" MaximumValue="65" Type="Integer"></asp:RangeValidator>
+                    <asp:RangeValidator ID="RangeValidatorAge" runat="server" ForeColor="Red" ErrorMessage="Age sholud be in 3-65" ControlToValidate="txtAge" MinimumValue="3" MaximumValue="65" Type="Integer"></asp:RangeValidator>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidatorAge" runat="server" ForeColor="Red" ErrorMessage="Age is required" ControlToValidate="txtAge"></asp:RequiredFieldValidator>
                 </td>
             </tr>
@@ -68,7 +68,7 @@
                         <asp:ListItem>Pondicherry</asp:ListItem>
                         <asp:ListItem>Karaikal</asp:ListItem>
                     </asp:DropDownList>
-                    <%--<asp:RequiredFieldValidator ID="RequiredFieldValidatorCity" runat="server" ForeColor="Red" ErrorMessage="City is required" ControlToValidate="DropDownListCity""></asp:RequiredFieldValidator>--%>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ForeColor="Red" ErrorMessage="City is required" ControlToValidate="DropDownListCity"></asp:RequiredFieldValidator>
 
                 </td>
             </tr>
@@ -80,7 +80,7 @@
                         <asp:ListItem Value="">Please Select</asp:ListItem>
                         <asp:ListItem>TamilNadu</asp:ListItem>
                     </asp:DropDownList>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidatorState" runat="server" ForeColor="Red" ErrorMessage="State is required" ControlToValidate="DropDownListState" ></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidatorState" runat="server" ForeColor="Red" ErrorMessage="State is required" ControlToValidate="DropDownListState"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -124,11 +124,12 @@
                     <input id="Reset" type="reset" value="reset" />
                 </td>
             </tr>
+            <tr>
+                <td><br />Already have an account??<asp:HyperLink ID="hypLogin" runat="server" NavigateUrl="~/LoginPage.aspx">Login</asp:HyperLink>
+                </td>
+            </tr>
         </table>
-        <p>
-         Already have an account??<asp:HyperLink ID="hypLogin" runat="server" NavigateUrl="~/LoginPage.aspx">Login</asp:HyperLink>
-           
-        </p>
+
     </form>
 </body>
 </html>
